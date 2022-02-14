@@ -17,9 +17,8 @@ steps:
   - name: golang
     args:
     - '-c'
-    - |
-      if [[ "$TRIGGER_NAME" == "Hello-world" ]]; then
-          - name: go  
-            args: ['go','quickstart-automate/main.go']
+    - | 
+      if ["$TRIGGER_NAME" == "Hello-world" ]; then
+          echo "build successful"
       fi
 # [END cloudbuild_quickstart_automate]
