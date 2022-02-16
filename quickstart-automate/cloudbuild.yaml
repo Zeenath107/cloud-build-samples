@@ -14,7 +14,7 @@
 
 # [START cloudbuild_quickstart_automate]
 steps:
-- name: golang
+- name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   args:
     - '-c'
