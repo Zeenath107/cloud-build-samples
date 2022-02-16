@@ -15,9 +15,10 @@
 # [START cloudbuild_quickstart_automate]
 steps:
 - name: golang
+  entrypoint: 'bash'
   args:
     - '-c'
-    - |
+    - |-
       if [[ "$TRIGGER_NAME" == "Hello-world" ]]; then
           - name: golang  
             args: ['go','run','quickstart-automate/main.go']
